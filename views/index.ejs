@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('partials/header.ejs') %>
+
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>CSV to HTML/PDF converter</h2>
+        </div>
+        <div class="card-body">
+            <h3><label for="title" class='badge badge-info'>Upload you file: </label> </h3>
+            <form action="generatehtml" method="post" enctype="multipart/form-data">
+                <input type="file" name="csvfile"> <br><br>
+                <button class="btn btn-success">Generate HTML</button>
+            </form>
+            <br> <br> <br>
+            <form action="generatepdf" method="post" enctype="multipart/form-data">
+                <input type="file" name="csvfile"> <br><br>
+                <button class="btn btn-success">Generate PDF</button>
+            </form>
+        </div>
+</body>
+
+</html>
+
+<%- include ('partials/footer.ejs') %>

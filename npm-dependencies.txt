@@ -1,0 +1,5 @@
+npm install --save express
+npm install --save ejs
+npm install --save html-pdf
+npm install --save formidable
+npm install --save util-promisifyall

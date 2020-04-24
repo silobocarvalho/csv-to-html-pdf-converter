@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ('partials/header.ejs') %>
+<body>
+    <div class="table-responsive">
+    <table class='table table-striped table-hover' style='font-size: 150%'>
+        <thead>
+            <% header.forEach(col => { %>
+                <th><%= col.toUpperCase() %></th>
+            <% }) %>
+        </thead>
+        <tbody>
+            <% rows.forEach(row => { %>
+                <tr>
+                    <% row.forEach(element => { %>
+                        <td><%= element %></td>
+                    <% }) %>
+                </tr>
+            <% }) %>
+            <% %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+<%- include ('partials/footer.ejs') %>
+
